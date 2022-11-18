@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/10715cfae1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/icon.png">
 </head>
@@ -18,9 +19,9 @@
         <a href="#" class="logo"><i class="fa-solid fa-paint-roller"></i> Shrabya <span>FLooring</span></a>
         <nav class="navbar">
             <a href="#home">Home</a>
-            <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Projects</a>
+            <a href="#">Pricing</a>
             <a href="#">Contact</a>
         </nav>
         <div class="nav-icon">
@@ -71,14 +72,98 @@
         <img src="img/business.png" alt="">
     </div>
     <section class="services" id="services">
-        <div class="service-container container">
-            <p class="services-title title">Our<span> Services</span></p>
+        <p class="services-title title">Our<span> Services</span></p>
+        <div class="services-container">
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="img/s1.png" alt="">
+                    <h3>Carpet Installation</h3>
+                    <p>If you want to instantly spruce up the look of a room, you should consider carpet. Carpet not only protects delicate flooring by absorbing any shock, they also add character to a place and make it look more refined.</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/s2.png" alt="">
+                    <h3>Hardwood Floors</h3>
+                    <p>Hardwood floors have an old-school charm that can make any property look luxurious and chic. We offer the finest quality hardwood floors that will make your place look more sophisticated.</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/s3.png" alt="">
+                    <h3>Floor Tile</h3>
+                    <p>Tiles can instantly add to the aesthetics of any place. Whether it is your office, living room or bathroom, our flooring tiles can transform any room or property and make it look more refined.</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/s4.png" alt="">
+                    <h3>Laminate Flooring</h3>
+                    <p>Looking for a flooring option that ensures durability in the presence of pets and kids? Laminate floors is exactly what you need</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/s5.png" alt="">
+                    <h3>FLoor Repair</h3>
+                    <p>At Evans Flooring, we have years of experience in repair and restoration of floors. Call us for advice and a free quote on your floor repair needs.</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/s6.png" alt="">
+                    <h3>Commercial Flooring</h3>
+                    <p>Get the best designs for the right attention to your work, to set the tone for business. Our commercial flooring options will leave you floored!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="project">
+        <p class="projects-title title">Our<span> Projects</span></p>
+        <div class="box-container">
+
+            <a href="img/p1.jpeg" class="box">
+                <div class="image">
+                    <img src="img/p1.jpeg" alt="">
+                </div>
+            </a>
+
+            <a href="img/p2.jpeg" class="box">
+                <div class="image">
+                    <img src="img/p2.jpeg" alt="">
+                </div>
+            </a>
+
+            <a href="img/p3.jpeg" class="box">
+                <div class="image">
+                    <img src="img/p3.jpeg" alt="">
+                </div>
+            </a>
+
+            <a href="img/p4.jpeg" class="box">
+                <div class="image">
+                    <img src="img/p4.jpeg" alt="">
+                </div>
+            </a>
+
+            <a href="img/p5.jpeg" class="box">
+                <div class="image">
+                    <img src="img/p5.jpeg" alt="">
+                </div>
+            </a>
+
+            <a href="img/p6.jpeg" class="box">
+                <div class="image">
+                    <img src="img/p6.jpeg" alt="">
+                </div>
+            </a>
 
         </div>
     </section>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        lightGallery(document.querySelector('.projects .box-container'));
+    </script>
 
 </body>
 
