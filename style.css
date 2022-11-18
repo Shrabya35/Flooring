@@ -193,11 +193,14 @@
                     
                     .services {
                         background-color: var(--light-bg);
+                        display: grid;
+                        place-items: center;
                     }
                     
                     .container {
-                        display: grid;
-                        place-items: center;
+                        display: flex;
+                        gap: 1.25rem;
+                        margin-top: 1rem;
                     }
                     
                     .title {
@@ -213,6 +216,74 @@
                         width: 40%;
                         margin: 10px auto;
                         border-top: 2px solid var(--color1);
+                    }
+                    
+                    .services .box-container {
+                        display: -ms-grid;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 2rem;
+                    }
+                    
+                    .services .box-container .box {
+                        text-align: center;
+                        padding: 3rem;
+                        background: var(--white);
+                        -webkit-box-shadow: var(--box-shadow);
+                        box-shadow: var(--box-shadow);
+                        border: var(--border);
+                    }
+                    
+                    .services .box-container .box:hover img {
+                        -webkit-transform: translateY(-1rem);
+                        transform: translateY(-1rem);
+                    }
+                    
+                    .services .box-container .box img {
+                        height: 7rem;
+                        margin-bottom: .5rem;
+                        -webkit-transition: .2s linear;
+                        transition: .2s linear;
+                    }
+                    
+                    .services .box-container .box h3 {
+                        font-size: 1.7rem;
+                        color: var(--black);
+                        text-transform: capitalize;
+                        padding: 1rem 0;
+                    }
+                    
+                    .services .box-container .box p {
+                        font-size: 1.4rem;
+                        color: var(--light-color);
+                        line-height: 2;
+                    }
+                    
+                    .projects {
+                        display: grid;
+                        place-items: center;
+                    }
+                    
+                    .projects .box-container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 2rem;
+                    }
+                    
+                    .projects .box-container .box:hover .image img {
+                        transform: scale(1.1);
+                    }
+                    
+                    .projects .box-container .box .image {
+                        height: 40rem;
+                        overflow: hidden;
+                    }
+                    
+                    .projects .box-container .box .image img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        transition: .2s linear;
                     }
                     
                     @media (max-width: 1200px) {
@@ -274,6 +345,14 @@
                         }
                         .home .slide .content h3 {
                             font-size: 3rem;
+                        }
+                        .services .box-container {
+                            -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+                            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                        }
+                        .projects .box-container {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
                         }
                     }
                     
